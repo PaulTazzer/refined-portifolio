@@ -155,7 +155,7 @@ img {
 }
 
 a {
-  color: #004B80; /* Sets the text color of the link */
+  color: #FF2400; /* Sets the text color of the link */
   text-decoration: none; /* Removes the default underline */
   font-weight: bold; /* Makes the link text bold */
 }
@@ -201,4 +201,5 @@ footer {
         width: 100%;
         z-index: 1000; /* Optional: ensures it stays on top of other content */
     }
+
 
