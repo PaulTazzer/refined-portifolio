@@ -1,0 +1,204 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #B6D0E2;
+    color: black;
+    line-height: 1.7;
+}
+
+/* NAVBAR */
+header {
+    background: #0096FF;
+    color: var(--text-color);
+    padding: 10px 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Makes the navigation stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* keep your desired color */
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background:#0096FF;
+    border-radius: 10px;
+    box-shadow: #CF9FFF;
+    margin-top: 76px;
+}
+
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    background: #004B80 ;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background: #004B80;
+}
+
+/* SECTIONS */
+main section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px 20px;
+}
+
+section h3 {
+    color: #0096FF;
+    margin-bottom: 10px;
+}
+
+/* PROJECT CARDS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffd9eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 0, 128, 0.2);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+img {
+    max-height: 900px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact-box {
+    background: #0096FF;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-box a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a {
+  color: #004B80; /* Sets the text color of the link */
+  text-decoration: none; /* Removes the default underline */
+  font-weight: bold; /* Makes the link text bold */
+}
+
+/* FOOTER */
+footer {
+    background: #0096FF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.header-connect-btn {
+  background-color: #004B80; /* A primary button color */
+  color: white;              /* Text color */
+  padding: 10px 20px;        /* Space around the text (top/bottom, left/right) */
+  text-align: center;        /* Center the text inside the button */
+  text-decoration: none;     /* Remove the default link underline */
+  display: inline-block;     /* Allows the button to be styled with padding and fit in the header */
+  border-radius: 5px;        /* Rounded corners */
+  font-weight: bold;         /* Make the text bold */
+  cursor: pointer;           /* Changes the mouse cursor to a hand icon on hover */
+  margin-left: 15px;         /* Adds space to the left of the button (adjust as needed for header layout) */
+}
+
+/* Add a hover effect for better user experience */
+.header-connect-btn:hover {
+  background-color: #0056b3; /* A darker color when the user hovers over it */
+}
+
+.your-navbar-class { /* Replace with your actual class or ID */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Optional: ensures it stays on top of other content */
+    }
+
