@@ -232,14 +232,14 @@ body {
     /* Navigation fix */
     nav {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: center;
         gap: 1rem;
     }
 
     nav ul {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 1rem;
     }
 
@@ -262,7 +262,7 @@ body {
 
     /* Stack navigation more cleanly */
     nav {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
 
     nav ul {
@@ -275,7 +275,7 @@ body {
     }
 
     h1, h2, h3 {
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1.2rem, 2vw, 1rem);
         text-align: center;
     }
 
@@ -298,6 +298,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
