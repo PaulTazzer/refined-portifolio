@@ -232,14 +232,14 @@ body {
     /* Navigation fix */
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
         gap: 1rem;
     }
 
     nav ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         gap: 1rem;
     }
 
@@ -298,6 +298,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
